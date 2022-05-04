@@ -1,0 +1,4 @@
+*.swp
+.DS_Store
+*.blend
+test.blend*
