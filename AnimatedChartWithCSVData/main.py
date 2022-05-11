@@ -50,8 +50,11 @@ def add_keyframes(objects, data):
     obj.scale = [1, 1, 0]
     obj.keyframe_insert(data_path = "scale", frame = 1 + offset)
 
-    obj.scale = [1, 1, height]
+    obj.scale = [1, 1, height + 1]
     obj.keyframe_insert(data_path = "scale", frame = 20 + offset)
+
+    obj.scale = [1, 1, height]
+    obj.keyframe_insert(data_path = "scale", frame = 26 + offset)
 
     index += 1
     offset += 1
